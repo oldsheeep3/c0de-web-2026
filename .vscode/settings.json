@@ -1,0 +1,9 @@
+{
+    "[javascript, typescript]": {
+        "editor.tabSize": 2
+    },
+    "editor.insertSpaces": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+}

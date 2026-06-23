@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ecmel.vscode-html-css",
+        "ritwickdey.liveserver",
+        "pranaygp.vscode-css-peek",
+        "ms-vscode.vscode-typescript-next",
+        "naumovs.color-highlight",
+        "jzmstrjp.color-the-tag-name"
+    ]
+}
