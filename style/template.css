@@ -1,0 +1,16 @@
+p.container,
+.container p {
+    display: inline-block;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.child1,
+.child1>*,
+.child1>*>* {
+    display: inline-block;
+    margin: 5px;
+}

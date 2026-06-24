@@ -1,0 +1,143 @@
+<!DOCTYdivE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewdivort" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/template.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <h1>CSSのテストをします！</h1>
+    スタイルを適用する要素を緑色で塗っています！
+    <div class="container">
+        <p>例えばこんな感じ</p>
+    </div>
+    <div>スタイルを適用する要素の親要素を水色で塗っています！</div>
+    <p class="container">
+        例えばこんな感じ
+    </p>
+    <div>スタイルを適用する要素の子要素を黄色で塗っています！</div>
+    <div class="container child1">
+        <div>
+            <p>例えばこんな感じ</p>
+        </div>
+    </div>
+    <h2>padding / margin</h2>
+    <p>paddingは要素の内側の余白、marginは要素の外側の余白を表します。</p>
+    <div class="container">
+        <p class="padding">padding</p>
+    </div>
+    <div class="container">    
+        <p class="margin">margin</p>
+    </div>
+    <h2>border</h2>
+    <p>borderは要素の枠線を表します。</p>
+    <div class="container">
+        <p class="border">border</p>
+    </div>
+    <h2>border-radius</h2>
+    <p>border-radiusは要素の角を丸くするためのプロパティです。</p>
+    <div class="container">
+        <p class="border-radius">border-radius</p>
+    </div>
+    <p>文字がめり込むので、paddingと併用することが多いです！</p>
+    <div class="container">
+        <p class="border-radius padding">border-radius + padding</p>
+    </div>
+    <h2>box-sizing</h2>
+    <p>box-sizingは要素の幅や高さの計算方法を指定するプロパティです。</p>
+    <div class="container">
+        <p class="box-sizing-border-box">box-sizing: border-box</p>
+    </div>
+    <div class="container">
+        <p class="box-sizing-content-box">box-sizing: content-box</p>
+    </div>
+    <p>border-boxはpaddingやborderを含めた幅や高さを指定するのに対して、content-boxはpaddingやborderを含まない幅や高さを指定します。</p>
+    <div class="container">
+        <p class="box-sizing-border-box border">border-box + border</p>
+    </div>
+    <div class="container">
+        <p class="box-sizing-content-box border">content-box + border</p>
+    </div>
+    <h2>display</h2>
+    <p>displayは要素の表示方法を指定するプロパティです。</p>
+    <h3>flex</h3>
+    flexは要素を柔軟に配置するためのレイアウトモードです。子要素を横並びにしたり、縦に配置したり、順序を逆にしたりできます。
+    <div class="container">
+        <div class="flex">
+            <div>子要素１</div>
+            <div>子要素２</div>
+            <div>子要素を横並びにしたりできます。</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex reverse">
+            <div>子要素１</div>
+            <div>子要素２</div>
+            <div>子要素の順を逆にしたり。</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex column">
+            <div>子要素１</div>
+            <div>子要素２</div>
+            <div>子要素を縦に配置もできます。</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex between">
+            <div>子要素１</div>
+            <div>子要素２</div>
+            <div>配置のやり方も柔軟に対応できます。</div>
+        </div>
+    </div>
+    <h3>block</h3>
+    blockは要素をブロックレベル要素として表示するための値です。ブロックレベル要素は、常に新しい行から始まり、利用可能な全幅を占めます。
+    <div class="container">
+        <div class="block">block1</div>
+        <div class="block">block2</div>
+        <div class="block">block3</div>
+    </div>
+    <h3>inline</h3>
+    inlineは要素をインライン要素として表示するための値です。インライン要素は、同じ行に他の要素と並んで表示されます。
+    <div class="container">
+        <p class="inline">inline1</p>
+        <p class="inline">inline2</p>
+        <p class="inline">inline3</p>
+    </div>
+    <h3>inline-block</h3>
+    inline-blockは要素をインラインブロック要素として表示するための値です。インラインブロック要素は、インライン要素のように同じ行に並びますが、ブロック要素のようにサイズを指定できます。
+    <div class="container">
+        <div class="inline-block">inline-block1</div>
+        <div class="inline-block">inline-block2</div>
+        <div class="inline-block">inline-block3</div>
+    </div>
+    <h3>contents</h3>
+    contentsは要素の子要素を直接的に表示するための値です。要素自体は表示されず、その子要素のみが表示されます。
+    <div class="container">
+        <div class="contents">
+            contentsを指定していますが、要素自体は表示されず、その子要素のみが表示されます。
+            <div>contents1</div>
+            <div>contents2</div>
+            <div>contents3</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="no-contents">
+            contentsを指定していないため、要素自体も表示されます。
+            <div>contents1</div>
+            <div>contents2</div>
+            <div>contents3</div>
+        </div>
+    </div>
+    <h3>none</h3>
+    noneは要素を表示しないための値です。要素は表示されず、レイアウトにも影響を与えません。<br />
+    本当はこの下にnoneを指定した要素が存在する。
+    <div class="container">
+        <div class="none">
+            noneを指定しています。要素は表示されません。ソースコードを見ているあなたには見える(⋈◍＞◡＜◍)。✧♡
+        </div>
+    </div>
+</body>
+</html>

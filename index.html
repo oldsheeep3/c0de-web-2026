@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テスト用のページ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>タイトル</h1>
+    <h2>サブタイトル</h2>
+    <p>段落1</p>
+    <p>段落2</p>
+    <p>段落3</br>段落3の続き</p>
+    <h2>サブタイトル</h2>
+    <h3>小見出し</h3>
+    <h4>さらに小見出し</h4>
+    <h5>さらにさらに小見出し</h5>
+    <div> <!-- <- これは表示自体に関係はない -->
+        <p>段落4</p>
+        <p>段落5</p>
+        <p><a href=".">リンク</a></p>
+    </div>
+
+    <!-- リスト -->
+    <ol> <!-- 数字付きリスト -->
+        <li>リスト1</li> <!-- リストの要素 -->
+        <li>リスト2</li>
+        <li>リスト3</li>
+    </ol>
+    <ul> <!-- マーク付きリスト -->
+        <li>リストA</li>
+        <li>リストB</li>
+        <li>リストC</li>
+    </ul>
+
+    <!-- 表 -->
+    <table>
+        <tr> <!-- 行 -->
+            <th>見出し列</th> <!-- 見出しセル -->
+            <th>見出し2</th>
+            <th>見出し3</th>
+            <th>見出し4</th>
+        </tr>
+        <tr>
+            <th>見出しA</th> <!-- 見出しセル -->
+            <td>データ1</td> <!-- データセル -->
+            <td>データ2</td>
+            <td>データ3</td>
+        </tr>
+        <tr>
+            <th>見出しB</th>
+            <td>データ4</td>
+            <td>データ5</td>
+            <td>データ6</td>
+        </tr>
+    </table>
+
+    <!-- 画像 -->
+    <div>
+        <img src="https://placehold.jp/150x150.png" alt="サンプル画像">
+    </div>
+    
+    <button id="myButton" onclick="alert('ボタンがクリックされました！')">ボタン</button>
+
+    <!-- フォーム -->
+    <form>
+        <label for="myInput">入力フィールド:</label>
+        <input type="text" id="myInput" name="myInput" placeholder="ここに入力してください"><br>
+        <label for="myPassword">パスワード:</label>
+        <input type="password" id="myPassword" name="myPassword" placeholder="パスワードを入力"><br>
+        <label for="mySelect">選択肢:</label>
+        <select id="mySelect" name="mySelect">
+            <option value="option1">オプション1</option>
+            <option value="option2">オプション2</option>
+            <option value="option3">オプション3</option>
+        </select><br>
+        <label for="myCheckbox">チェックボックス:</label>
+        <input type="checkbox" id="myCheckbox" name="myCheckbox"><br>
+        <label for="myRadio1">ラジオボタン1:</label>
+        <input type="radio" id="myRadio1" name="myRadio" value="radio1"><br>
+        <label for="myRadio2">ラジオボタン2:</label>
+        <input type="radio" id="myRadio2" name="myRadio" value="radio2"><br>
+        
+        <input type="submit" value="送信">
+    </form>
+</body>
+</html>
