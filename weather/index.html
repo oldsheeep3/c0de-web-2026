@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お天気アプリ（API練習）</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>🌤 お天気アプリ</h1>
+    <p>都市名を<strong>ローマ字/英語</strong>で入力して「検索」を押すと、今の天気を表示します。</p>
+
+    <!-- 入力フォーム -->
+    <div class="search">
+        <input type="text" id="cityInput" placeholder="例）Tokyo / Osaka / London">
+        <button id="searchButton">検索</button>
+    </div>
+
+    <!-- ここに結果を表示する -->
+    <div id="result" class="result">
+        <p>まだ検索していません。</p>
+    </div>
+
+    <!-- ▼ 授業では blank（穴埋め）を読み込みます。答え合わせのときは answer に差し替え -->
+    <script src="weather.blank.js"></script>
+    <!-- <script src="weather.answer.js"></script> -->
+</body>
+
+</html>
